@@ -20,3 +20,5 @@ def response(function_call):
         markup.add(types.InlineKeyboardButton("Перейти на сайт", url="https://timeweb.cloud/"))
         botTimeWeb.send_message(function_call.message.chat.id, second_mess, reply_markup=markup)
         botTimeWeb.answer_callback_query(function_call.id)
+
+botTimeWeb.infinity_polling()
